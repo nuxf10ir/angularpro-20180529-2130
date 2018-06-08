@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Injector } from '@angular/core';
 
-import { HelloComponent } from './hello/hello.component';
+import { HelloComponent } from './hello.component';
 
 import { createCustomElement } from '@angular/elements'
 
@@ -17,8 +17,7 @@ import { createCustomElement } from '@angular/elements'
 export class AppModule {
 
   constructor(private injector: Injector) {
-    // HelloComponent
-    const helloElement = createCustomElement(HelloComponent, { injector } );
+    const helloElement = createCustomElement(HelloComponent, {injector});
     customElements.define('my-hello', helloElement);
   }
 
