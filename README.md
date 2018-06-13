@@ -11,7 +11,7 @@ https://github.com/javascriptru/angularpro-20180529-2130
 
 Дополнительные Вопросы:
 
-- njectable({providedIn: Module})
+- injectable({providedIn: Module})
 
 ##### Максим М.
 
